@@ -15,7 +15,7 @@ List the databases you have in MongoDB. Confirm that uk_food is listed.
 List the collection(s) in the database to ensure that establishments is there.
 Find and display one document in the establishments collection using find_one and display with pprint.
 Assign the establishments collection to a variable to prepare the collection for use.
-![Database set up](images/p1.png)
+![Database set up](images/P1.png)
 
 ##Part 2: Update the Database
 
@@ -23,7 +23,7 @@ Use NoSQL_setup_starter.ipynb for this section of the challenge.
 The magazine editors have some requested modifications for the database before you can perform any queries or analysis for them. Make the following changes to the establishments collection:
 An exciting new halal restaurant just opened in Greenwich, but hasn't been rated yet. The magazine has asked you to include it in your analysis. Add the following information to the database:
 
-![Added details](images/p2.png)
+![Added details](images/P2.png)
 
 Find the BusinessTypeID for "Restaurant/Cafe/Canteen" and return only the BusinessTypeID and BusinessType fields.
 Update the new restaurant with the BusinessTypeID you found.
@@ -32,7 +32,7 @@ Some of the number values are stored as strings, when they should be stored as n
 Use update_many to convert latitude and longitude to decimal numbers.
 Use update_many to convert RatingValue to integer numbers.
 
-![convert latitude,longitude and rating value](images/p12.png)
+![convert latitude,longitude and rating value](images/p21.png)
 
 ##Part 3: Exploratory Analysis##
 
@@ -49,19 +49,20 @@ Display the first document in the results using pprint.
 Convert the result to a Pandas DataFrame, print the number of rows in the DataFrame, and display the first 10 rows.
 1.Which establishments have a hygiene score equal to 20?
 
-![Higher Score greater than 20](images/p3.png)
+![Higher Score greater than 20](images/P3.png)
 
 2.Which establishments in London have a RatingValue greater than or equal to 4?
 Hint: The London Local Authority has a longer name than "London" so you will need to use $regex as part of your search.
 
-![Rating value greater than 4](images/p4.png)
+![Rating value greater than 4](images/P4.png)
 
 3.What are the top 5 establishments with a RatingValue of 5, sorted by lowest hygiene score, nearest to the new restaurant added, "Penang Flavours"?
 Hint: You will need to compare the geocode to find the nearest locations. Search within 0.01 degree on either side of the latitude and longitude.
 
-![Top 5 Establishments](images/p5.png)
+![Top 5 Establishments](images/P5.png)
 
 4.How many establishments in each Local Authority area have a hygiene score of 0? Sort the results from highest to lowest, and print out the top ten local authority areas.
 Hint: You will need to use the aggregation method to answer this.
 
-![Local Authority Hygiene Score](images/p7.png)
+![Local Authority Hygiene Score](images/P6.png)
+![Local Authority Hygiene Score](images/P7.png)
